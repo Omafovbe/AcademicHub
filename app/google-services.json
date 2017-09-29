@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "267817104988",
+    "firebase_url": "https://acada-hub.firebaseio.com",
+    "project_id": "acada-hub",
+    "storage_bucket": "acada-hub.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:267817104988:android:9a9e5d04a08d8ebf",
+        "android_client_info": {
+          "package_name": "com.teamph.academichub"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "267817104988-nsp88i858afsvk9fi56ok93uo7h3bptj.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.teamph.academichub",
+            "certificate_hash": "b7a36b09ca61ad767a4cbbd1334b1e54147cd92b"
+          }
+        },
+        {
+          "client_id": "267817104988-53g1ru9k791ar0hvr4etuknu1al4pcj3.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCwxH3LpzqcqLsyZ2yPaiG1Eb-W_b2w0-s"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "267817104988-53g1ru9k791ar0hvr4etuknu1al4pcj3.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

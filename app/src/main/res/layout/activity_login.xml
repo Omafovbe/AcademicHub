@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.teamph.academichub.ui.LoginActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_margin="@dimen/activity_horizontal_margin">
+
+        <TextView
+            android:id="@+id/tvLogin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/title_activity_login"
+            android:layout_gravity="center"
+            android:textStyle="bold"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"/>
+
+        <EditText
+            android:id="@+id/edEmail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textEmailAddress"
+            android:hint="@string/hint_email"/>
+
+        <EditText
+            android:id="@+id/edPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPassword"
+            android:hint="@string/hint_password"/>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/btnSignIn"
+            android:onClick="signIn"
+            android:text="@string/btn_login"
+            android:textColor="@color/icons"
+            android:textStyle="bold"
+            android:backgroundTint="@color/colorPrimary"
+            android:layout_marginTop="@dimen/fab_margin"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Continue with"
+            android:gravity="center"
+            android:layout_marginTop="@dimen/fab_margin"
+            android:layout_marginBottom="@dimen/fab_margin"
+            android:textAppearance="?android:textAppearanceMedium"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="@dimen/fab_margin">
+
+            <Button
+                android:layout_width="0dp"
+                android:id="@+id/btnGoogle"
+                android:layout_weight="1"
+                android:onClick="googleIn"
+                android:drawableStart="@drawable/ic_iconsgoogle"
+                android:text="Google"
+                android:layout_marginEnd="@dimen/topBtm"
+                android:textColor="@color/secondary_text"
+                android:textAllCaps="false"
+                android:backgroundTint="#ffffff"
+                android:layout_height="wrap_content" />
+
+            <Button
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:id="@+id/btnFacebook"
+                android:onClick="facebkIn"
+                android:layout_marginStart="@dimen/topBtm"
+                android:backgroundTint="@color/facebook"
+                android:text="Facebook"
+                android:textColor="#ffffff"
+                android:textAllCaps="false"
+                android:drawableStart="@drawable/ic_iconsfacebook"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/btn_reset_password"
+            android:textAppearance="?android:textAppearanceMedium"
+            android:text="@string/btn_forgot_password"
+            android:textAllCaps="false"
+            android:onClick="resetPassword"
+            android:background="@null"/>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/register"
+            android:onClick="register"
+            android:textAppearance="?android:textAppearanceMedium"
+            android:text="@string/btn_link_to_register"
+            android:textAllCaps="false"
+            android:textColor="@color/colorPrimary"
+            android:background="@null"/>
+
+        <ProgressBar
+            android:layout_width="@dimen/progressBar"
+            android:layout_height="@dimen/progressBar"
+            android:id="@+id/progBar"
+            android:indeterminateTint="@color/colorPrimary"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/topBtm"
+            android:visibility="gone"/>
+    </LinearLayout>
+</layout>
